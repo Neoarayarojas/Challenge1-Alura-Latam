@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="programa.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+	<title>Encriptador de texto</title>
+</head>
+<body>
+	<header>
+        <img class=logo src="./pictures/logo.png" alt="Logo de Alura">
+	</header>
+	<main>
+		<section class="frame">    
+		    <textarea class="entrada" cols="30" rows="10" placeholder="Inserte texto aquí"></textarea>
+            <h6><img src="./pictures/Vector.png" alt="Signo de Exclamación"> Solo letras minúsculas y sin acentos.</h6>
+            <button onclick="code()" class="boton-encriptar">Encriptar</button>
+            <button onclick="decoder()" class="boton-desencriptar">Desencriptar</button>
+		</section>
+		<aside>
+			<textarea class = "salida" cols="30" rows="10" readonly = "readonly"></textarea>
+            <img class="estatus" src="./pictures/frame.png" alt="Ningún mensaje fue encontrado ">
+			<button class="boton-copiar" onclick="copiarTexto()">Copiar</button>
+		</aside>
+		<script src="programa.js"></script>
+	</main>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+*{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    line-height: 150%;
+    color: #0A3871;    
+}
+
+.logo{
+    padding: 30px;
+    width: 2%;
+}
+
+main{
+    display: flex;
+    padding: 0 5%;
+}
+
+.frame{
+    border-color: black;
+    width: 50em;
+    height: 32em;
+}
+
+.entrada{
+    width: 80%;
+    height: 80%;
+    padding: 1em;
+    font-size: 25px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    border-color: #FFFFFF;
+    outline: none;
+    font-weight: 600;
+    resize: none;
+}
+
+
+h6{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 18px;
+    color: gray;
+}
+
+
+.boton-encriptar{
+    background: #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.boton-desencriptar{
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+aside{
+    background: #FFFFFF;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 25em;
+    height: 37em;
+    padding: 1em;
+}
+
+.salida{
+    background-image: url("./pictures/muneco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 50%;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    outline: none;
+    font-weight: 600;
+    padding: 1em;
+    font-size: 25px;
+    resize: none;
+}
+.estatus{
+    background: white;
+    padding: 1em ;
+}
+
+.boton-copiar{
+    width: 328px;
+    height: 67px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 24px;
+    display: none;
+}
+
+@media screen and (max-width:870px){
+    
+    .logo{
+        width: auto;
+    }
+    main{
+        flex-direction:column;
+    }
+    
+    .frame{
+        width: auto;
+        text-align: center;
+    }
+
+    .entrada{
+        width: 80%;
+        height: 50%;
+    }
+
+    aside{
+        width: auto;
+        height: auto;
+    }
+
+    .salida{
+        width: 80%;
+        height: auto;
+    }
+
+    .estatus{
+        max-width:max-content;
+        width: 80%;
+        height: auto;
+    }
+
+
+}
